@@ -1,4 +1,4 @@
-package lovecraftmod.actions
+package lovecraftmod.actions;
 
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
