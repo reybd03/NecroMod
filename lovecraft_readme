@@ -22,11 +22,36 @@
 //       - DMG()
 //       - UPGRADE
 //       - DESCRIPTION
-//     > Horror Stricken (debuff)
+//     > Horror Stricken (horror debuff)
+//       - String ID()
+//       - NAME
+//       - cost()
+//       - DMG()
+//       - UPGRADE
+//       - DESCRIPTION
 //     > Non-Human Entity (Summon 2 Ghouls & -1 worshipper)
+//       - String ID()
+//       - Name
+//       - cost()
+//       - DESCRIPTION
 //     > Counter Logic (block)
+//       - String ID()
+//       - Name
+//       - cost()
+//       - UPGRADE
+//       - DESCRIPTION
 //     > Shameful Existence (summon hound of Tindalos + Attack)
+//       - String ID()
+//       - NAME
+//       - cost()
+//       - UPGRADE
+//       - DESCRIPTION
 //     > Enduring Faith (Buffs)
+//       - String ID()
+//       - NAME
+//       - cost()
+//       - upgrade
+//       - DESCRIPTION
 //     > Overwhelming Hysteria (Hysteria Curse)
 //     > Enthusiastic Cultists (3 attack + 3 block * worshippers_amount)
 //     > Hound of Tindalos (attack * Madness)
@@ -47,7 +72,7 @@
 //     > Cloud Thing
 //     > Strike BLACK
 //     > Talpeurs
-//     > Block (until later renamed)
+//     > Fortify Presence
 //  * Skills (26)
 //     > Strength of the High Priest (5 turns of str buildup)
 //     > Deceitful Magic (5 turns of heals/life leach + block)
@@ -123,7 +148,9 @@
 //   > The Summoner
 //    * Starting deck
 //    - Strike_B * 4
-//    -
+//    - Counter Logic (block)
+//    - Malice
+//    - Cthulhu
 // 4. patches
 //    > Powers
 //     * High Immortality (Buffs)
