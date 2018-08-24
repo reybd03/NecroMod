@@ -54,9 +54,10 @@
 //       - DESCRIPTION
 //     > Overwhelming Hysteria (Hysteria Curse)
 //       - string id()
-//       - name 
-//
+//       - name
+//       - DESCRIPTION
 //     > Enthusiastic Cultists (3 attack + 3 block * worshippers_amount)
+//       - String 
 //     > Hound of Tindalos (attack * Madness)
 //     > The Outsider (attack + poison + leach)
 //       - MAGIC[poison](1)
