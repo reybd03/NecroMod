@@ -1,0 +1,179 @@
+// todo:
+// 1. List of Card types and cards
+//  * Attack/Defense/Curse (26)
+//     > Spiteful Hate (Attack)
+//       - String ID(Spiteful_H)
+//       - NAME
+//       - cost(1)
+//       - DMG(8)
+//       - UPGRADE(2)
+//       - Description
+//     > Malice (attack)
+//       - String ID
+//       - NAME
+//       - cost
+//       - DMG()
+//       - UPGRADE
+//       - DESCRIPTION
+//     > Blind Obedience (Buffs)
+//       - String ID()
+//       - Name
+//       - cost()
+//       - DMG()
+//       - UPGRADE
+//       - DESCRIPTION
+//     > Horror Stricken (horror debuff)
+//       - String ID()
+//       - NAME
+//       - cost()
+//       - DMG()
+//       - UPGRADE
+//       - DESCRIPTION
+//     > Non-Human Entity (Summon 2 Ghouls & -1 worshipper)
+//       - String ID()
+//       - Name
+//       - cost()
+//       - DESCRIPTION
+//     > Counter Logic (block)
+//       - String ID()
+//       - Name
+//       - cost()
+//       - UPGRADE
+//       - DESCRIPTION
+//     > Shameful Existence (summon hound of Tindalos + Attack)
+//       - String ID()
+//       - NAME
+//       - cost()
+//       - UPGRADE
+//       - DESCRIPTION
+//     > Enduring Faith (Buffs)
+//       - String ID()
+//       - NAME
+//       - cost()
+//       - upgrade
+//       - DESCRIPTION
+//     > Overwhelming Hysteria (Hysteria Curse)
+//     > Enthusiastic Cultists (3 attack + 3 block * worshippers_amount)
+//     > Hound of Tindalos (attack * Madness)
+//     > The Outsider (attack + poison + leach)
+//       - MAGIC[poison](1)
+//       - MAGIC_UP(2)
+//     > The Curse of Yig (block + poison) cost: 2
+//     > Hunted Heathens (disbandment curse)
+//     > Mental Asylum (Terminal Illness Curse)
+//     > Dagon's Will (block + health + energy)
+//     > Ghoulish being (5 attack + exhaust) cost: 0
+//     > Serpent of Yig (3 attack + 3 block) cost: 1
+//       - if enemy removes block, then put The Curse of Yig in hand. cost: 0
+//     > Headless Ghost
+//     > Shoggoth: cost(0) attack(2 at end of turn) (stacks)
+//     > Formless Spawn: cost(1) (attack + madness)
+//     > Deep Ones
+//     > Cloud Thing
+//     > Strike BLACK
+//     > Talpeurs
+//     > Fortify Presence
+//  * Skills (26)
+//     > Strength of the High Priest (5 turns of str buildup)
+//     > Deceitful Magic (5 turns of heals/life leach + block)
+//     > Dark Matter
+//     > Call of Cthulhu
+//     > The Temple
+//     > Hydra
+//     > Nameless Mist
+//     > Outer God's Reckoning
+//     > C'thalpa's Bidding (Summon Talpeurs)
+//     > Cultist Anonymous (block + worshipper)
+//     > Shapeshifter
+//     > The Feaster from the Stars
+//     > The Defiler
+//     > R'lyeh
+//     > Phase shifter
+//     > Mountains of madness (summon formless spawn * 3)
+//     > Elder thing (Summon Shoggoth * 2)
+//     > The Mound (Summon Ghost)
+//     > Return to Arkham
+//     > Binding Spell
+//     > Outer God
+//     > Memory Erasure
+//     > Deny Repose (Remove Buffs of enemy)
+//     > Prescience (Defense 999 for 5 turns then exhaust)
+//     > Chaos Manifestation (skill) cost(3) upgrade cost(2)
+//       * 5 x (1 * Madness stacks)
+//     > Titus Crow: cost(2)
+//       * Dimensional Time Traveler
+//       - Only if Kthanid is in the deck
+//       - Card is shuffled into the deck, creates a copy into the deck when played
+//         and exhausts
+//       - Reduces Overwhelming Hysteria, Madness(stack + enemy)
+//  * Power Cards (8)
+//     > Cthulhu: cost(3) grants + 5 worshippers
+//       * High Priest of the Great Old Ones
+//       -- Immortality (5 turns of 999 defense, then thorns + shield)
+//       -- Dream Manipulation
+//       -- Madness Inducement
+//     > Lovecraftian Horror: cost(3)
+//       * Minion of the Evil Races
+//       -- grants +1 worshipper ea turn
+//       -- +1 attack, defense ea turn
+//       -- +1 Madness ea turn
+//     > Yig: cost(3)
+//       * Father of Serpents
+//       -- Draw 1 Serpent in hand ea turn. costs: 0
+//       -- ea turn attack (10 * amount of poison on random enemy)
+//       -- ea turn apply 1 confusion on random enemy
+//     > Azathoth: cost(10 - (worshippers_amount/5))
+//       * Blind Idiot God
+//       -- High Immortality (Permanent defense 999)
+//       -- Slumbering Idiot (char does not attack while asleep)
+//       -- World within Dreams (RNG 999 attack to all enemies)
+//     > Nyarlathotep: cost(5 - (worshippers_amount/2))
+//       * The Crawling Chaos
+//       -- Limitless Strength & Speed
+//       -- Chaos Manipulation
+//       -- Abstract Existence
+//     > Yog-Sothoth: cost(7 - (worshippers_amount/3))
+//       * Master of the Gates between Worlds
+//       -- Control over Time and Space
+//       -- Forbidden Knowledge (+1 triggers Hysteria)
+//       -- Beyond all Concepts
+//       -- Omnipotent Watcher
+//      > Kthanid: cost(0 + (1 * worshippers_amount))
+//        * Elder God and benevolent twin of Cthulhu
+//        -- Banishing Blast (Can not play any other Lovecraftian power cards)
+//        -- Benevolence (full heal & enemy is pacified for 5 turns)
+//        -- Great Thought (Summon Titus Card)
+//      > Shub-Niggurath:
+// 3. Characters
+//   > The Summoner
+//    * Starting deck
+//    - Strike_B * 4
+//    - Counter Logic (block)
+//    - Malice
+//    - Cthulhu
+// 4. patches
+//    > Powers
+//     * High Immortality (Buffs)
+//     * Immortality (Buffs)
+//     * Dream Manipulation (debuff)
+//     * Madness (strbuff) (stacks)
+//       *
+//     * Time & Space (blkbuff) (stacks)
+//       *
+//     * Worshippers (enerbuff)
+//       * Used to Summon the Evil Ones
+//    > Hysteria (health curse)
+//    > Terminal Illness (Madness Curse)
+//    > disbandment (worshipper Curse)
+//    > Horror (debuff)
+// 5. Relics
+//   > Colour out of Space
+//     * Attempt to uncover the secrets behind Lovecraftian works
+//     - Darkness shrouds (Madness multiplies ea turn)
+//     - Necronomicon bonus (madness & heal bonus)
+//    > Dunwich Horror
+//     * The core horror from whence the madness originated
+//     - for every 5 madness, gain 5 block per turn
+//     - for every 10 madness, gain 1 energy per turn
+//     - for every 7 madness, heal 5 per turn
+//***************************************************************************
