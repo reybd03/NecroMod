@@ -20,6 +20,6 @@ import com.megacrit.cardcrawl.actions.*;
 
 
 public class ColourOOSpace extends CustomRelic {
-      public static final String ID = "Colour_Out_Of_Space"
+      public static final String ID = "Colour_Out_Of_Space";
 
 }
