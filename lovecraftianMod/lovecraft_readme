@@ -57,7 +57,7 @@
 //       - name
 //       - DESCRIPTION
 //     > Enthusiastic Cultists (3 attack + 3 block * worshippers_amount)
-//       - String 
+//       - String
 //     > Hound of Tindalos (attack * Madness)
 //     > The Outsider (attack + poison + leach)
 //       - MAGIC[poison](1)
@@ -115,7 +115,7 @@
 //       * High Priest of the Great Old Ones
 //       -- Immortality (5 turns of 999 defense, then thorns + shield)
 //       -- Dream Manipulation
-//       -- Madness Inducement
+//       -- Madness Inducement (upgrade)
 //     > Lovecraftian Horror: cost(3)
 //       * Minion of the Evil Races
 //       -- grants +1 worshipper ea turn
@@ -129,8 +129,8 @@
 //     > Azathoth: cost(10 - (worshippers_amount/5))
 //       * Blind Idiot God
 //       -- High Immortality (Permanent defense 999)
-//       -- Slumbering Idiot (char does not attack while asleep)
-//       -- World within Dreams (RNG 999 attack to all enemies)
+//       -- Slumbering Idiot (char does not attack/take dmg while asleep)
+//       -- World within Dreams (3 turns then 999 attack to all enemies; upgrade)
 //     > Nyarlathotep: cost(5 - (worshippers_amount/2))
 //       * The Crawling Chaos
 //       -- Limitless Strength & Speed
@@ -159,9 +159,11 @@
 //    > Powers
 //     * High Immortality (Buffs)
 //     * Immortality (Buffs)
+//       - 3 turns of 999 block + no curse + no debuff
 //     * Dream Manipulation (debuff)
+//       - if enemy buffs, cause confusion + 1 stack of horror
 //     * Madness (strbuff) (stacks)
-//       *
+//       * +2 Strength per stack
 //     * Time & Space (blkbuff) (stacks)
 //       *
 //     * Worshippers (enerbuff)
@@ -170,6 +172,7 @@
 //    > Terminal Illness (Madness Curse)
 //    > disbandment (worshipper Curse)
 //    > Horror (debuff)
+//    > Madness Inducement
 // 5. Relics
 //   > Colour out of Space
 //     * Attempt to uncover the secrets behind Lovecraftian works

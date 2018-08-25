@@ -25,5 +25,12 @@ import lovecraftmod.patches.TheSummonerEnum;
 
 public class TheSummoner extends CustomPlayer {
 
-  
+  // starting deck
+  // Strike_B * 4
+  // Counter_L * 4
+  // Deceitful_Magic
+  // cthulhu
+
+  // health: 69
+  // energy: 3
 }
