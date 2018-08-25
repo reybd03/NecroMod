@@ -7,9 +7,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import basemod.abstracts.CustomCard;
 import lovecraftmod.patches.AbstractCardEnum;
-import lovecraftmod.powers.DreamManip; // fill in with Cthulhu Powers
+import lovecraftmod.powers.DreamManip;
+import lovecraftmod.powers.Immortality; 
+import lovecraftmod.powers.Mad_Induce; 
 
 public class cthulhu extends AbstractLovecraftCard {
   public static final String ID = "Cthulhu";
@@ -17,18 +18,53 @@ public class cthulhu extends AbstractLovecraftCard {
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   private static final int COST = 3;
+  private static final int POWER_BLOCK = 999;
+  private static final int MADNESS = 1;
+  private static final int HORROR = 1;
+  private int DREAM_INTENT;
+  private static final int POWER_UPGRADE = 3;
   private static final int POOL = 1;
 
    public cthulhu() {
       super(ID, NAME, "img", COST, DESCRIPTION, AbstractCard.CardType.POWER,
-              AbstractCardEnum.LOVECRAFTMOD, AbstractCard.CardRarity.COMMON,
+              AbstractCardEnum.BLACK, AbstractCard.CardRarity.COMMON,
               AbstractCard.CardTarget.SELF, POOL);
+    this.block = this.baseBlock = POWER_BLOCK;  
+    this.exhaust = true;
             }
 
 // call DreamManip, Immortality, Mad_Induce (upgrade)
+// DreamManip: debuff - buff/debuff cancel + attack cancel + goodies
+// Immortality: buff - 3 turns of 999 block + no curse + no debuff
+// Upgrade: Mad_Induce + BaseCost
+// Mad_Induce: +3 Madness & Attack 2 * Madness to ea enemy
    @Override
    public void use(AbstractPlayer p, AbstractMonster m) {
-       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-       new DreamManip(p, this.magicNumber), this.magicNumber));
+      AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new Immortality(p, this.block), this.block)); 
+      
+      DREAM_INTENT = 0;
+      
+      if (DREAM_INTENT == 1) {
+          // Manipulation: (buffs/debuffs)
+          // +1 Strength
+      }
+      else if (DREAM_INTENT == 2) {
+       //Dream: horror (attacks)
+       
+      }
+      else {
+             // +2 madness 
+              }
+      AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new DreamManip(m, DREAM_INTENT), DREAM_INTENT));
+   }
+   
+   @Override
+   public AbstractCard makeCopy() {
+       return new cthulhu();
+   }
+   
+   @Override
+   public void upgrade() {
+       
    }
 }
