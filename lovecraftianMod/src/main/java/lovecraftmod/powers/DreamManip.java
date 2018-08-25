@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import lovecraftmod.lovecraftmod;
 
-public class DreamManipulation extends AbstractCyclePower {
+public class DreamManip {
 
   // todo;
 }
