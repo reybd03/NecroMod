@@ -28,6 +28,7 @@ public class cthulhu extends AbstractLovecraftCard {
 // call DreamManip, Immortality, Mad_Induce (upgrade)
    @Override
    public void use(AbstractPlayer p, AbstractMonster m) {
-       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DreamManip(p, this.magicNumber), this.magicNumber));
+       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+       new DreamManip(p, this.magicNumber), this.magicNumber));
    }
 }
