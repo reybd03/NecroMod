@@ -11,6 +11,8 @@ import lovecraftmod.patches.AbstractCardEnum;
 import lovecraftmod.powers.DreamManip;
 import lovecraftmod.powers.Immortality; 
 import lovecraftmod.powers.Mad_Induce; 
+import lovecraftmod.actions.Horror;
+import lovecraftmod.actions.Madness;
 
 public class cthulhu extends AbstractLovecraftCard {
   public static final String ID = "Cthulhu";
@@ -30,31 +32,38 @@ public class cthulhu extends AbstractLovecraftCard {
               AbstractCardEnum.BLACK, AbstractCard.CardRarity.COMMON,
               AbstractCard.CardTarget.SELF, POOL);
     this.block = this.baseBlock = POWER_BLOCK;  
-    this.exhaust = true;
             }
 
 // call DreamManip, Immortality, Mad_Induce (upgrade)
 // DreamManip: debuff - buff/debuff cancel + attack cancel + goodies
 // Immortality: buff - 3 turns of 999 block + no curse + no debuff
-// Upgrade: Mad_Induce + BaseCost
+// Upgrade: Mad_Induce + BaseCost Reduction
 // Mad_Induce: +3 Madness & Attack 2 * Madness to ea enemy
    @Override
    public void use(AbstractPlayer p, AbstractMonster m) {
+     // Immortality... and GO
       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new Immortality(p, this.block), this.block)); 
       
+      
+      // Dream Manipulation... and GO
       DREAM_INTENT = 0;
       
-      if (DREAM_INTENT == 1) {
-          // Manipulation: (buffs/debuffs)
-          // +1 Strength
+      switch (DREAM_INTENT) {
+      
+          case 1:
+              // Manipulation: (buffs/debuffs)
+              // +1 Madness
+              AbstractDungeon.actionManager.addToBottom(new Madness(p, m, MADNESS));
+              break;
+          case 2:
+              //Dream: horror (attacks)
+              AbstractDungeon.actionManager.addToBottom(new Horror(m, p, HORROR));
+              break;
+          default:
+              // +2 madness
+              AbstractDungeon.actionManager.addToBottom(new Madness(p, m, MADNESS*2));
+              break;
       }
-      else if (DREAM_INTENT == 2) {
-       //Dream: horror (attacks)
-       
-      }
-      else {
-             // +2 madness 
-              }
       AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new DreamManip(m, DREAM_INTENT), DREAM_INTENT));
    }
    
