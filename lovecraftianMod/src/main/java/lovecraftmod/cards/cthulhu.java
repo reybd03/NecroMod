@@ -48,6 +48,9 @@ public class cthulhu extends AbstractLovecraftCard {
       // Dream Manipulation... and GO
       DREAM_INTENT = 0;
       // test to see intent
+
+
+
       switch (DREAM_INTENT) {
       
           case 1:
@@ -74,6 +77,7 @@ public class cthulhu extends AbstractLovecraftCard {
    
    @Override
    public void upgrade() {
-       
+       // add mad_Induce
+       // upgrade basecost -1
    }
 }
