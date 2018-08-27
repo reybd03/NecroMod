@@ -1,0 +1,212 @@
+{
+	"Strike_W": {
+		"NAME": "Strike",
+		"DESCRIPTION": "Deal !D! damage."
+	},
+	
+	"Defend_W": {
+		"NAME" : "Defend",
+		"DESCRIPTION": "Gain !B! Block"
+	},
+	
+	"Negative_Energy_Arrows": {
+		"NAME" : "Negative Energy Arrows",
+		"DESCRIPTION": "Deal !D! damage !M! times. NL Apply !M! NegativeLevel."
+	},
+	
+	"Bone_Wall": {
+		"NAME" : "Bone Wall",
+		"DESCRIPTION" : "Gain !B! Block. NL Gain 1 Bones."
+	},
+	
+	"Negative_Energy_Javelin": {
+		"NAME" : "Negative Energy Javelin",
+		"DESCRIPTION" : "Deal !D! damage. NL Apply !M! NegativeLevel."
+	},
+	
+	"Thousand_Bone_Knives": {
+		"NAME" : "Thousand Bone Knives",
+		"DESCRIPTION" : "Deal !D! damage !M! times. NL If you have Bones : NL Hit 2 additional times. Remove 1 Bones."
+	},
+	
+	"Shade_Step": {
+		"NAME" : "Shade Step",
+		"DESCRIPTION" : "Draw !M! cards. NL If that card(s) is a Skill : NL Gain 1 Energy."
+		},
+		
+	"Bone_Armor": {
+		"NAME" : "Bone Armor",
+		"DESCRIPTION" : "Gain !B! Block. NL Gain 1 Bones. NL Gain 1 Artifact."
+		},
+		
+	"Bone_Armory": {
+		"NAME" : "Bone Armory",
+		"DESCRIPTION" : "At the start of your turn : Gain 1 Bones."
+		},
+		
+	"Bone_Spikes": {
+		"NAME" : "Bone Spikes",
+		"DESCRIPTION" : "Deal !D! Damage. NL If you have Bones : Deal 4 additional Damage. Remove 1 Bones."
+		},
+		
+	"Negative_Energy_Bomb": {
+		"NAME" : "Negative Energy Bomb",
+		"DESCRIPTION" : "Deal !D! damage for each stack of NegativeLevel."
+		},
+		
+	"Summon_Death_Knight": {
+		"NAME" : "Summon Death Knight",
+		"DESCRIPTION" : "Summon a DeathKnight."
+		},
+		
+	"Life_Tap": {
+		"NAME" : "Life Tap",
+		"DESCRIPTION" : "Lose !M! HP. Gain 2 Energy."
+		},
+		
+	"Blood_Wake": {
+		"NAME" : "Blood Wake",
+		"DESCRIPTION" : "Lose 3 HP. Deal !D! damage."
+		},
+		
+	"Bone_Shift": {
+		"NAME" : "Bone Shift",
+		"DESCRIPTION" : "Draw !M! cards. Gain 2 Bones."
+		},
+	
+	"Blood_for_Blood": {
+		"NAME" : "Blood for Blood",
+		"DESCRIPTION" : "Whenever you lose HP : Gain 1 Blood."
+		},
+		
+	"Spectral_Walk": {
+		"NAME" : "Spectral Walk",
+		"DESCRIPTION" : "Draw !M! Cards. Gain spectral."
+		},
+		
+	"Blood_Shield": {
+		"NAME" : "Blood Shield",
+		"DESCRIPTION" : "Lose !M! HP. Gain !B! Block. NL Gain 1 blood"
+		},
+		
+	"Scare": {
+		"NAME" : "Fear",
+		"DESCRIPTION" : "Apply !M! Vulnerable. Apply !M! Weak."
+		},
+				
+	"Hell_Flame": {
+		"NAME" : "Hell Flame",
+		"DESCRIPTION" : "Deal !D! damage. Apply 1 Hellfire"
+		},
+		
+	"Shackles_Of_Pain": {
+		"NAME" : "Shackles of Pain",
+		"DESCRIPTION" : "Apply !M! Shackles of Pain."
+		},
+		
+	"Vampiric_Strike": {
+		"NAME" : "Vampiric Strike",
+		"DESCRIPTION" : "Deal !D! damage. If target was above 50% HP : Heal for 25% damage dealt."
+		},
+	
+	"Blood_Is_Power": {
+		"NAME" : "Blood is Power",
+		"DESCRIPTION" : "Lose 2 HP. Gain 2 Strength. Exhaust."
+		},
+		
+	"Summon_Undead_Army": {
+		"NAME" : "Summon Undead Army",
+		"DESCRIPTION" : "Summon !M! Zombies"
+		},
+		
+	"Summon_Undead": {
+		"NAME" : "Summon Undead",
+		"DESCRIPTION" : "Summon a random Undead. Exhaust."
+		},
+		
+	"Summon_Lich": {
+		"NAME" : "Summon Lich",
+		"DESCRIPTION" : "Summon a powerful undead Mage that deals !M! damage to ALL enemies each turn."
+		},		
+		
+	"Summon_Vampire_Lady": {
+		"NAME" : "Summon Lich",
+		"DESCRIPTION" : "Summon a powerful Vampire that deals 3 damage to a random enemy each turn and heals for unblocked damage dealt."
+		},			
+		
+	"Bone_Prison": {
+		"NAME" : "Bone Prison",
+		"DESCRIPTION" : "If the target intends to attack : Stun it. Add 1 Bones. Exhaust."
+		},
+		
+	"Spectral_Armor": {
+		"NAME" : "Spectral Armor",
+		"DESCRIPTION" : "Gain !B! Block. Gain 1 Spectral."
+		},
+		
+	"Detonate_Bones": {
+		"NAME" : "Detonate Bones",
+		"DESCRIPTION" : "Remove all bones. Deal !D! damage times the amount of stacks removed."
+		},
+		
+	"Negative_Energy_Mist": {
+		"NAME" : "Negative Energy Mist",
+		"DESCRIPTION" : "Apply 2 NegativeLevelsto ALL enemies. Exhaust."
+		},
+		
+	"Consume_Illness": {
+		"NAME" : "Consume Illness",
+		"DESCRIPTION" : "Remove a negative effect. If you do : Heal 3 HP. Exhaust."
+		},
+		
+	"Negative_Energy_Shield": {
+		"NAME" : "Negative Energy Shield",
+		"DESCRIPTION" : "Gain !B! Block. Gain 1 Negative Energy Shield."
+		},
+		
+	"Uncharnel": {
+		"NAME" : "Uncharnel",
+		"DESCRIPTION" : "Add an exhausted card to your drawpile. Gain !M! Zombie (s). Exhaust."
+		},
+		
+	"Blood_Magic": {
+		"NAME" : "Blood Magic",
+		"DESCRIPTION" : "Gain BloodMagic."
+		},
+		
+	"Violent_Necrosis": {
+		"NAME" : "Violent Necrosis",
+		"DESCRIPTION" : "Double all of the targets debuffs. Exhaust."
+		},
+		
+	"Corrupt": {
+		"NAME" : "Corrupt Power",
+		"DESCRIPTION" : "Corrupt all non-unique buffs of the target. Exhaust."
+		},
+		
+	"Epidemic": {
+		"NAME" : "Epidemic",
+		"DESCRIPTION" : "Spread all debuffs of the target to all enemies."
+		},
+		
+	"Toxic_Smoke_Screen": {
+		"NAME" : "Toxic Smokescreen",
+		"DESCRIPTION" : "Gain !B! Block. When attacked : Apply !M! Poison to the attacker."
+		},
+		
+	"Pandemic": {
+		"NAME" : "Pandemic",
+		"DESCRIPTION" : "Apply 4 Poison and 2 Vulnerable to the target. Apply 2 Poison and 1 Vulnerable to ALL other enemies. Exhaust."
+		},
+		
+	"Siphon_Strength": {
+		"NAME" : "Siphon Strength",
+		"DESCRIPTION" : "Drain 2 Strength from the target. Exhaust."
+		},
+		
+	"Skeleton_Dragon": {
+		"NAME" : "Summon Skeleton Dragon",
+		"DESCRIPTION" : "Summon a SkeletonDragon. Costs 1 Energy less for each stack of Bones, consuming them."
+		}		
+		
+}	
