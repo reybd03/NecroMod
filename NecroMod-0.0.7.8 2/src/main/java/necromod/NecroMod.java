@@ -1,6 +1,5 @@
 package necromod;
 
-//import com.megacrit.cardcrawl.helpers.GameDictionary;
 import necromod.cards.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,16 +8,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
-/**
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-* import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-* import com.megacrit.cardcrawl.unlock.UnlockTracker;
-**/
+
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
@@ -28,15 +18,13 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import basemod.*;
 import basemod.BaseMod;
 import basemod.ModPanel;
-//import basemod.abstracts.CustomUnlockBundle;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
-//import basemod.interfaces.OnCardUseSubscriber;
+
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
-//import basemod.interfaces.SetUnlocksSubscriber;
 
 import necromod.characters.TheNecromancer;
 import necromod.patches.AbstractCardEnum;
@@ -50,23 +38,23 @@ import java.nio.charset.StandardCharsets;
 public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
 	EditStringsSubscriber, EditKeywordsSubscriber {             // , OnCardUseSubscriber, SetUnlocksSubscriber, 
 	
-	public static final Logger LOGGER = LogManager.getLogger(NecroMod.class.getName());
+    public static final Logger LOGGER = LogManager.getLogger(NecroMod.class.getName());
 	
-	private static final String MODNAME = "NecroMod";
-	private static final String AUTHOR = "ShikiSeiren, elhulk08";
-	private static final String DESCRIPTION = "v0.1.1\n Updates for The Necromancer character. Necrobump.";
+    private static final String MODNAME = "NecroMod";
+    private static final String AUTHOR = "ShikiSeiren, elhulk08";
+    private static final String DESCRIPTION = "v0.1.1\n Updates for The Necromancer character. Necrobump.";
 	
-	private static final Color WHITE = CardHelper.getColor(255.0f, 250.0f, 250.0f);
-	private static final String NECROMOD_ASSETS_FOLDER = "img";
+    private static final Color WHITE = CardHelper.getColor(255.0f, 250.0f, 250.0f);
+    private static final String NECROMOD_ASSETS_FOLDER = "img";
 	
-	// card backgrounds
-	private static final String ATTACK_WHITE = "512/bg_attack_white.png";
-	private static final String SKILL_WHITE = "512/bg_skill_white.png";
-	private static final String POWER_WHITE = "512/bg_power_white.png";
-	private static final String ENERGY_ORB_WHITE = "512/card_white_orb.png";
-	
-	private static final String ATTACK_WHITE_PORTRAIT = "1024/bg_attack_white.png";
-	private static final String SKILL_WHITE_PORTRAIT = "1024/bg_skill_white.png";
+    // card backgrounds
+    private static final String ATTACK_WHITE = "512/bg_attack_white.png";
+    private static final String SKILL_WHITE = "512/bg_skill_white.png";
+    private static final String POWER_WHITE = "512/bg_power_white.png";
+    private static final String ENERGY_ORB_WHITE = "512/card_white_orb.png";
+
+    private static final String ATTACK_WHITE_PORTRAIT = "1024/bg_attack_white.png";
+    private static final String SKILL_WHITE_PORTRAIT = "1024/bg_skill_white.png";
     private static final String POWER_WHITE_PORTRAIT = "1024/bg_power_white.png";
     private static final String ENERGY_ORB_WHITE_PORTRAIT = "1024/card_white_orb.png";
     

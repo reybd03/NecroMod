@@ -6,8 +6,6 @@ import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-//import com.badlogic.gdx.math.*;
-//import com.esotericsoftware.spine.*;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 

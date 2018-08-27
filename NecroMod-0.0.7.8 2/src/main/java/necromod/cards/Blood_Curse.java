@@ -7,14 +7,12 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.core.*;
-//import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 
 import necromod.NecroMod;
 import necromod.patches.AbstractCardEnum;
-import necromod.cards.AbstractNecromancerCards;
 
 public class Blood_Curse extends AbstractNecromancerCards {
 	public static final String ID = "Blood_Curse";
@@ -29,7 +27,7 @@ public class Blood_Curse extends AbstractNecromancerCards {
 	public Blood_Curse() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.BLOOD_CURSE), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.baseMagicNumber = this.magicNumber = AMOUNT;
