@@ -79,7 +79,7 @@
 //     > Fortify Presence
 //  * Skills (26)
 //     > Strength of the High Priest (5 turns of str buildup)
-//     > Deceitful Magic (5 turns of heals/life leach + block)
+//     > Deceitful Magic (5 madness + block)
 //     > Dark Matter
 //     > Call of Cthulhu
 //     > The Temple
@@ -113,7 +113,7 @@
 //  * Power Cards (8)
 //     > Cthulhu: cost(3) grants + 5 worshippers
 //       * High Priest of the Great Old Ones
-//       -- Immortality (5 turns of 999 defense, then thorns + shield)
+//       -- Immortality (5 turns of 999 defense, then thorns)
 //       -- Dream Manipulation
 //       -- Madness Inducement (upgrade)
 //     > Lovecraftian Horror: cost(3)
@@ -163,7 +163,7 @@
 //     * Dream Manipulation (debuff)
 //       - if enemy buffs, cause confusion + 1 stack of horror
 //     * Madness (strbuff) (stacks)
-//       * +2 Strength per stack
+//       * +1 Strength per stack
 //     * Time & Space (blkbuff) (stacks)
 //       *
 //     * Worshippers (enerbuff)
@@ -172,7 +172,10 @@
 //    > Terminal Illness (Madness Curse)
 //    > disbandment (worshipper Curse)
 //    > Horror (debuff)
+//      - frail + weak
 //    > Madness Inducement
+//      - +3 Madness
+//      - Attack 2 * Madness to ea enemy
 // 5. Relics
 //   > Colour out of Space
 //     * Attempt to uncover the secrets behind Lovecraftian works
