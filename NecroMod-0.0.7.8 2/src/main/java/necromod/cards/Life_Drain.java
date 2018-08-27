@@ -27,7 +27,7 @@ public class Life_Drain extends AbstractNecromancerCards {
 	public Life_Drain() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.LIFE_DRAIN), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.baseMagicNumber = this.magicNumber = 2;

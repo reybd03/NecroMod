@@ -33,7 +33,7 @@ public class Negative_Energy_Bomb extends AbstractNecromancerCards{
 	public Negative_Energy_Bomb() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.NEGATIVE_ENERGY_BOMB), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
 	
 		this.isMultiDamage = true;
 		this.baseDamage = this.damage = ATTACK_DMG;

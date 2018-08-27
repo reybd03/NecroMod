@@ -25,7 +25,7 @@ public class Summon_Lich extends AbstractNecromancerCards{
 	
 	public Summon_Lich() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SUMMON_LICH), COST, DESCRIPTION, AbstractCard.CardType.POWER,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		//this.baseDamage = this.damage = 3;
 		this.baseMagicNumber = this.magicNumber = 3;
 		

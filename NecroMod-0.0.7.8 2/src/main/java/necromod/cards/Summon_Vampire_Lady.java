@@ -24,7 +24,7 @@ public class Summon_Vampire_Lady extends AbstractNecromancerCards {
 	
 	public Summon_Vampire_Lady() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SUMMON_VAMPIRE_LADY), COST, DESCRIPTION, AbstractCard.CardType.POWER,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
 		this.baseDamage = this.damage = 3;
 		
 	}

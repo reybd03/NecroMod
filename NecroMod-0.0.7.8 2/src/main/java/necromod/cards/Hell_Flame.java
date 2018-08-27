@@ -27,7 +27,7 @@ public class Hell_Flame extends AbstractNecromancerCards {
 	public Hell_Flame() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.HELL_FLAME), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.exhaust = true;

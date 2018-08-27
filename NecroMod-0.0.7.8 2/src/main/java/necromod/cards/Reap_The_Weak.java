@@ -29,7 +29,7 @@ public class Reap_The_Weak extends AbstractNecromancerCards {
 	public Reap_The_Weak() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.REAP_THE_WEAK), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.isMultiDamage = true;

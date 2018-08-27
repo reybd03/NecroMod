@@ -23,7 +23,7 @@ public class Fear extends AbstractNecromancerCards{
 	
 	public Fear() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.FEAR), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 		this.baseMagicNumber = this.magicNumber = 2;
 		
 	}

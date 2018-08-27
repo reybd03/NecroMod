@@ -29,7 +29,7 @@ public class Negative_Energy_Arrows extends AbstractNecromancerCards{
 	public Negative_Energy_Arrows() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.NEGATIVE_ENERGY_ARROWS), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		

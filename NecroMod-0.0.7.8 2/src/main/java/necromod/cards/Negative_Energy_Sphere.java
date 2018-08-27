@@ -26,7 +26,7 @@ public class Negative_Energy_Sphere extends AbstractNecromancerCards {
 	public Negative_Energy_Sphere() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.NEGATIVE_ENERGY_SPHERE), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ALL_ENEMY, POOL);
+				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ALL_ENEMY);
 		
 		this.baseMagicNumber = this.magicNumber = this.AMOUNT;
 		this.baseDamage = this.damage =  ATTACK_DMG;

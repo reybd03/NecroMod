@@ -22,7 +22,7 @@ public class Summon_Undead extends AbstractNecromancerCards {
 	
 	public Summon_Undead() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SUMMON_UNDEAD), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		
 		this.baseMagicNumber = this.magicNumber = 2;
 		this.exhaust = true;

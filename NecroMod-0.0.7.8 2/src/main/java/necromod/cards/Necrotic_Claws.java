@@ -20,13 +20,12 @@ public class Necrotic_Claws extends AbstractNecromancerCards {
 	private static final int ATTACK_DMG = 4;
 	public static final String DESCRIPTION = "Deal !D! damage 2 times. Apply 2 times 2 Poison.";
 	private static final int UPGRADE_PLUS_DMG = 2;
-	private static final int POOL = 1;
 	public final int AMOUNT = 1;
 	
 	public Necrotic_Claws() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.NECROTIC_CLAWS), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 

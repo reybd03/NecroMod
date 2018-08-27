@@ -23,7 +23,7 @@ public class Requiem extends AbstractNecromancerCards {
 	public Requiem() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.REQUIEM), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ALL_ENEMY, POOL);
+				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ALL_ENEMY);
 
 	}
 	
