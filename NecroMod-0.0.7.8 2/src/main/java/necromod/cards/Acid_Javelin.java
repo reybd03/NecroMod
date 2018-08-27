@@ -20,13 +20,12 @@ public class Acid_Javelin extends AbstractNecromancerCards {
 	private static final int ATTACK_DMG = 7;
 	public static final String DESCRIPTION = "Deal !D! damage. Apply !M! Poison. Apply 1 Weak, 1 Vulnerable.";
 	private static final int UPGRADE_PLUS_DMG = 2;
-	private static final int POOL = 1;
 	public final int AMOUNT = 1;
 	
 	public Acid_Javelin() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.ACID_JAVELIN), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.baseMagicNumber = this.magicNumber = 1;

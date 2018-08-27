@@ -88,7 +88,7 @@ public class TheNecromancer extends CustomPlayer{
 	
 	public static CharSelectInfo getLoadout() {
 		return new CharSelectInfo("The Necromancer", "A powerful mage that channels dark energies to summon the dead.",
-				75, 75, 99, 5,
+				75, 75, 0, 99, 5,
 			TheNecromancerEnum.NECROMANCER, getStartingRelics(), getStartingDeck(), false);
 	}
 	

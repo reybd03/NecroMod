@@ -24,7 +24,6 @@ public class MobFrailPower extends AbstractPower {
 		
 	}
 	
-	@Override
 	public void onGainedBlock(int blockAmount){
 		owner.currentBlock = owner.currentBlock * 3/4;
 	}

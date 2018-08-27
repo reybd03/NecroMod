@@ -1,7 +1,5 @@
 package necromod;
 
-import java.nio.charset.StandardCharsets;
-
 //import com.megacrit.cardcrawl.helpers.GameDictionary;
 import necromod.cards.*;
 import org.apache.logging.log4j.LogManager;
@@ -46,21 +44,17 @@ import necromod.patches.TheNecromancerEnum;
 import necromod.relics.Vampire_Amulet;
 //import necromod.relics.Phylactery;
 
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Properties;
 
 @SpireInitializer
 public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
 	EditStringsSubscriber, EditKeywordsSubscriber {             // , OnCardUseSubscriber, SetUnlocksSubscriber, 
 	
-	public static final Logger logger = LogManager.getLogger(NecroMod.class.getName());
+	public static final Logger LOGGER = LogManager.getLogger(NecroMod.class.getName());
 	
 	private static final String MODNAME = "NecroMod";
-	private static final String AUTHOR = "ShikiSeiren";
-	private static final String DESCRIPTION = "v0.0.1\n Adds The Necromancer as a playable third character";
+	private static final String AUTHOR = "ShikiSeiren, elhulk08";
+	private static final String DESCRIPTION = "v0.1.1\n Updates for The Necromancer character. Necrobump.";
 	
 	private static final Color WHITE = CardHelper.getColor(255.0f, 250.0f, 250.0f);
 	private static final String NECROMOD_ASSETS_FOLDER = "img";
@@ -297,7 +291,7 @@ public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, 
          * the value of NECROMOD_ASSETS_FOLDER must be created into which all the contents of the
          * `images/` folder must be relocated
          */
-        logger.info("creating the color " + AbstractCardEnum.WHITE.toString());
+        LOGGER.info("creating the color " + AbstractCardEnum.WHITE.toString());
         BaseMod.addColor(AbstractCardEnum.WHITE,
         		WHITE, WHITE, WHITE, WHITE, WHITE, WHITE, WHITE,
         		makePath(ATTACK_WHITE), makePath(SKILL_WHITE),
@@ -307,20 +301,21 @@ public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, 
     }
     
     public static void initialize() {
-    	logger.info("---NECROMOD INIT---");
+    	LOGGER.info("---NECROMOD INIT---");
     	
     	@SuppressWarnings("unused")
-    	NecroMod necro = new NecroMod();
+    	NecroMod necro;
+            necro = new NecroMod();
     	
-    	logger.info("------");
+    	LOGGER.info("------");
     }
     
     @Override
     public void receivePostInitialize() {
         // Mod badge
         Texture badgeTexture = new Texture(makePath(BADGE_IMG));
-        settingsPanel = new ModPanel();
-        settingsPanel.addUIElement(new ModLabel("NecroMod does not have any settings!", 400.0f, 700.0f, (me) -> {}));
+        ModPanel settingsPanel = new ModPanel();
+        settingsPanel.addUIElement(new ModLabel("NecroMod does not have any settings!", 400.0f, 700.0f, settingsPanel, (me) -> {}));
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
         
         Settings.isDailyRun = false;
@@ -330,35 +325,35 @@ public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, 
 
 	@Override
 	public void receiveEditCharacters() {
-		logger.info("begin editting characters");
+		LOGGER.info("begin editting characters");
 		
-		logger.info("add " + TheNecromancerEnum.NECROMANCER.toString());
+		LOGGER.info("add " + TheNecromancerEnum.NECROMANCER.toString());
 		BaseMod.addCharacter(TheNecromancer.class, "The Necromancer", "Necromancer class string",
 				AbstractCardEnum.WHITE, "The Necromancer",
 				makePath(NECROMANCER_BUTTON), makePath(NECROMANCER_PORTRAIT),
 				TheNecromancerEnum.NECROMANCER);
 		
-		logger.info("done editting characters");
+		LOGGER.info("done editting characters");
 	}
 
 	
 	@Override
 	public void receiveEditRelics() {
-		logger.info("begin editting relics");
+		LOGGER.info("begin editting relics");
         
         // Add relics
         RelicLibrary.add(new Vampire_Amulet());
         
         //BaseMod.addRelicToCustomPool(new Phylactery(), "WHITE");
         
-        logger.info("done editting relics");
+        LOGGER.info("done editting relics");
 	}
 
 	@Override
 	public void receiveEditCards() {
-		logger.info("begin editting cards");
+		LOGGER.info("begin editting cards");
 		
-		logger.info("add cards for " + TheNecromancerEnum.NECROMANCER.toString());
+		LOGGER.info("add cards for " + TheNecromancerEnum.NECROMANCER.toString());
 		
 		BaseMod.addCard(new Strike_White());
 		BaseMod.addCard(new Defend_White());
@@ -413,37 +408,37 @@ public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, 
 		BaseMod.addCard(new Epidemic());		
 		BaseMod.addCard(new Reap_The_Weak());
 		
-		logger.info("added tested cards");
+		LOGGER.info("added tested cards");
 		
 		BaseMod.addCard(new Strike_From_Beyond());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Siphon_Strength());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Toxic_Smoke_Screen());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Pandemic());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Acid_Javelin());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Necrotic_Claws());
-		logger.info("added Test Case");
+                LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Stop_Heart());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Skeleton_Dragon());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Cloud_Kill());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 		
 		BaseMod.addCard(new Requiem());
-		logger.info("added Test Case");
+		LOGGER.info("added Test Case");
 
 				
 		/****/
@@ -452,13 +447,13 @@ public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, 
 		**/
 		
 		
-		logger.info("done editting cards");
+		LOGGER.info("done editting cards");
 		
 	}
 	
 	@Override
 	public void receiveEditStrings() {
-		logger.info("begin editting strings");
+		LOGGER.info("begin editting strings");
 		
         // RelicStrings
         String relicStrings = Gdx.files.internal("localization/NecroMod-RelicStrings.json").readString(
@@ -469,9 +464,10 @@ public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, 
         		String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
 		
-		logger.info("done editting strings");
+		LOGGER.info("done editting strings");
 	}
 	
+        @Override
 	public void receiveEditKeywords() {
 		String[] NegativeLevel = {"negativelevel", "negativelevels"};
         

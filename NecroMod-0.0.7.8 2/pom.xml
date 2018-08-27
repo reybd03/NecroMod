@@ -3,7 +3,7 @@
 
 	<groupId>necromod</groupId>
 	<artifactId>necromod</artifactId>
-	<version>0.1.0</version>
+	<version>0.1.1</version>
 
 	<name>NecroMod</name>
 	<description>Necromancer class.</description>
@@ -12,7 +12,7 @@
 		<dependency>
 			<groupId>com.megacrit.cardcrawl</groupId>
 			<artifactId>slaythespire</artifactId>
-			<version>016</version>
+			<version>039</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/../lib/desktop-1.0.jar</systemPath>
 		</dependency>
