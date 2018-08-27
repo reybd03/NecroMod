@@ -21,12 +21,11 @@ public class Bone_Armory extends AbstractNecromancerCards {
 	public static final	String DESCRIPTION = cardStrings.DESCRIPTION;
 	public static final String UPGRADE_DESCRIPTION = "At the start of your turn : Gain 1 Bones. NL Innate." ;
 	private static final int COST = 1;
-	private static final int POOL = 1;
 	private final int AMOUNT = 1;
 	
 	public Bone_Armory() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BONE_ARMORY), COST, DESCRIPTION, AbstractCard.CardType.POWER,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		
 		this.baseMagicNumber = this.magicNumber = AMOUNT;
 		

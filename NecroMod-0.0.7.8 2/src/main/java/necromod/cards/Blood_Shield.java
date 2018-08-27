@@ -25,7 +25,7 @@ public class Blood_Shield extends AbstractNecromancerCards {
 	
 	public Blood_Shield() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BLOOD_SHIELD), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		this.baseMagicNumber = this.magicNumber = HP_LOSS_AMT;
 		this.baseBlock = BLOCK_AMT;
 		

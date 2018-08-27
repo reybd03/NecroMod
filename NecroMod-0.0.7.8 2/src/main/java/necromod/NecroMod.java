@@ -37,9 +37,9 @@ import java.nio.charset.StandardCharsets;
 @SpireInitializer
 public class NecroMod implements PostInitializeSubscriber, EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
 	EditStringsSubscriber, EditKeywordsSubscriber {             // , OnCardUseSubscriber, SetUnlocksSubscriber, 
-	
+
     public static final Logger LOGGER = LogManager.getLogger(NecroMod.class.getName());
-	
+
     private static final String MODNAME = "NecroMod";
     private static final String AUTHOR = "ShikiSeiren, elhulk08";
     private static final String DESCRIPTION = "v0.1.1\n Updates for The Necromancer character. Necrobump.";

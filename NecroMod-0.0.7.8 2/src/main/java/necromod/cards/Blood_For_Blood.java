@@ -23,7 +23,7 @@ public class Blood_For_Blood extends AbstractNecromancerCards{
 	
 	public Blood_For_Blood() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BLOOD_FOR_BLOOD), COST, DESCRIPTION, AbstractCard.CardType.POWER,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		
 		
 	}

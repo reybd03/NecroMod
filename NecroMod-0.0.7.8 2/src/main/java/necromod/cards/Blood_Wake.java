@@ -28,7 +28,7 @@ public class Blood_Wake extends AbstractNecromancerCards {
 	public Blood_Wake() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.BLOOD_WAKE), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.isMultiDamage = true;

@@ -21,11 +21,10 @@ public class Bone_Wall extends AbstractNecromancerCards {
 	private static final int COST = 1;
 	private static final int BLOCK_AMT = 8;
 	private static final int UPGRADE_PLUS_BLOCK = 3;
-	private static final int POOL = 0;	
 	
 	public Bone_Wall() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BONE_WALL), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF);
 		this.baseBlock = BLOCK_AMT;
 		
 	}

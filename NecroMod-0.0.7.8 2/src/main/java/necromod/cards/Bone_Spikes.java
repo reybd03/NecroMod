@@ -21,13 +21,12 @@ public class Bone_Spikes extends AbstractNecromancerCards {
 	private static final int ATTACK_DMG = 9;
 	public static final String DESCRIPTION = "Deal !D! damage.";
 	private static final int UPGRADE_PLUS_DMG = 2;
-	private static final int POOL = 1;
 	public final int AMOUNT = 1;
 	
 	public Bone_Spikes() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.BONE_SPIKES), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 

@@ -23,11 +23,10 @@ public class Bone_Armor extends AbstractNecromancerCards {
 	private static final int COST = 1;
 	private static final int BLOCK_AMT = 6;
 	private static final int UPGRADE_PLUS_BLOCK = 3;
-	private static final int POOL = 1;
 	
 	public Bone_Armor() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BONE_ARMOR), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
 		
 		this.baseBlock = BLOCK_AMT;
 	}

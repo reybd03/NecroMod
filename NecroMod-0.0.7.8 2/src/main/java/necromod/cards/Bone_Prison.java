@@ -20,12 +20,10 @@ public class Bone_Prison extends AbstractNecromancerCards {
 	public static final	String NAME = cardStrings.NAME;
 	public static final	String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final int COST = 1;
-	private static final int POOL = 1;
-	
 	
 	public Bone_Prison() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BONE_PRISON), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		this.exhaust = true;
 	
 	}

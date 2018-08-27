@@ -26,7 +26,7 @@ public class Blood_Is_Power extends AbstractNecromancerCards {
 	
 	public Blood_Is_Power() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BLOOD_IS_POWER), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		
 		this.exhaust = true;
 	}

@@ -20,13 +20,12 @@ public class Blood_Whip extends AbstractNecromancerCards {
 	private static final int ATTACK_DMG = 13;
 	public static final String DESCRIPTION = "Lose 2 HP. NL Deal !D! damage.";
 	private static final int UPGRADE_PLUS_DMG = 4;
-	private static final int POOL = 1;
 	public final int AMOUNT = 1;
 	
 	public Blood_Whip() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.BLOOD_WHIP), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 

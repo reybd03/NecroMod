@@ -22,7 +22,7 @@ public class Blood_Magic extends AbstractNecromancerCards{
 	
 	public Blood_Magic() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BLOOD_CURSE), COST, DESCRIPTION, AbstractCard.CardType.POWER,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
 		
 		//this.baseDamage = this.damage = 3;
 		this.baseMagicNumber = this.magicNumber = 5;

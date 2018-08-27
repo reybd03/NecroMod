@@ -19,11 +19,10 @@ public class Bone_Shift extends AbstractNecromancerCards {
 	public static final	String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final int COST = 1;
 	private static final int DRAW_AMT = 1;
-	private static final int POOL = 1;
 	
 	public Bone_Shift() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BONE_SHIFT), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
 		this.baseMagicNumber = this.magicNumber = DRAW_AMT;
 		
 	}

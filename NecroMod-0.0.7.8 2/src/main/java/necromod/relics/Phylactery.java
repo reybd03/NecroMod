@@ -15,7 +15,7 @@ public class Phylactery extends CustomRelic{
 	
 	private static final String ID = "Phylactery";
 	public final String[] DESCRIPTIONS = new String[] {
-			"Once per combat, if you would receive fatal damage: Revive with 10% of your max. HP "
+			"Once per combat, if you would receive fatal damage: Revive with 50% of your max. HP "
 	}; 
 	//private static final int HP_TO_HEAL;
 	
@@ -42,7 +42,7 @@ public class Phylactery extends CustomRelic{
     	if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !Phylactery.usedThisCombat) {
     		this.flash();
     		AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-    		AbstractDungeon.player.heal(AbstractDungeon.player.maxHealth / 10, true);
+    		AbstractDungeon.player.heal(AbstractDungeon.player.maxHealth / 50, true);
     	}
         
     }
