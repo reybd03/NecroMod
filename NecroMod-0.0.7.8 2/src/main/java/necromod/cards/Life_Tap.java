@@ -25,7 +25,7 @@ public class Life_Tap extends AbstractNecromancerCards {
 	
 	public Life_Tap() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.LIFE_TAP), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		this.energyGain = ENERGY_AMT;
 		this.baseMagicNumber = this.magicNumber = 2;
 		this.exhaust = true;

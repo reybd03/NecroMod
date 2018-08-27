@@ -22,7 +22,7 @@ public class Summon_Undead_Army extends AbstractNecromancerCards {
 	
 	public Summon_Undead_Army() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SUMMON_UNDEAD_ARMY), COST, DESCRIPTION, AbstractCard.CardType.POWER,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		
 		this.baseMagicNumber = this.magicNumber = 2;
 		

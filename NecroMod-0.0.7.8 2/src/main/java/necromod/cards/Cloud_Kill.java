@@ -23,7 +23,7 @@ public class Cloud_Kill extends AbstractNecromancerCards {
 	public Cloud_Kill() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.CLOUDKILL), COST, DESCRIPTION,
 				AbstractCard.CardType.SKILL, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ALL_ENEMY, POOL);
+				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ALL_ENEMY);
 		
 		this.baseMagicNumber = this.magicNumber = AMOUNT;
 

@@ -24,7 +24,7 @@ public class Shackles_Of_Pain extends AbstractNecromancerCards {
 	
 	public Shackles_Of_Pain() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SHACKLES_OF_PAIN), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 		this.baseMagicNumber = this.magicNumber = 1;
 		
 	}

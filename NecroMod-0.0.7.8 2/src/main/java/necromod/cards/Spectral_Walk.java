@@ -23,7 +23,7 @@ public class Spectral_Walk extends AbstractNecromancerCards {
 	
 	public Spectral_Walk() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SPECTRAL_WALK), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
 		this.baseMagicNumber = this.magicNumber = DRAW_AMT;
 		
 	}

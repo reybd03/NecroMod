@@ -22,7 +22,7 @@ public class Corrupt_Power extends AbstractNecromancerCards {
 	
 	public Corrupt_Power() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.CORRUPT), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		this.baseMagicNumber = this.magicNumber = 2;
 		this.exhaust = true;
 		

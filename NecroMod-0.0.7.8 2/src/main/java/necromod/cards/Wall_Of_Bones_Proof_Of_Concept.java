@@ -23,7 +23,7 @@ public class Wall_Of_Bones_Proof_Of_Concept extends AbstractNecromancerCards {
 	
 	public Wall_Of_Bones_Proof_Of_Concept() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.BONE_WALL), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF);
 		this.baseBlock = BLOCK_AMT;
 		
 	}

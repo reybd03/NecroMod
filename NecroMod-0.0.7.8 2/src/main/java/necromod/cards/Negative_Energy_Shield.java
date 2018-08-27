@@ -25,7 +25,7 @@ public class Negative_Energy_Shield extends AbstractNecromancerCards {
 	
 	public Negative_Energy_Shield() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.NEGATIVE_ENERGY_SHIELD), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
 		this.baseBlock = BLOCK_AMT;
 		
 	}

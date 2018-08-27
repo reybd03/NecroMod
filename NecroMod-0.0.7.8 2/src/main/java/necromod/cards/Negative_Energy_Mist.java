@@ -27,7 +27,7 @@ public class Negative_Energy_Mist extends AbstractNecromancerCards {
 	
 	public Negative_Energy_Mist() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.NEGATIVE_ENERGY_MIST), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ALL_ENEMY, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ALL_ENEMY);
 		this.baseMagicNumber = this.magicNumber = 2;
 		this.exhaust = true;
 	}

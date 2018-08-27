@@ -23,7 +23,7 @@ public class Defend_White extends AbstractNecromancerCards {
 	
 	public Defend_White() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.DEFEND_WHITE), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF);
 		this.baseBlock = BLOCK_AMT;
 	}
 	

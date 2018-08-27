@@ -29,7 +29,7 @@ public class Consume_Illness extends AbstractNecromancerCards{
 		
 		public Consume_Illness() {
 			super(ID, NAME, NecroMod.makePath(NecroMod.CONSUME_ILLNESS), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-					AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF, POOL);
+					AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
 			this.baseMagicNumber = this.magicNumber = 1;
 			this.exhaust = true;
 			

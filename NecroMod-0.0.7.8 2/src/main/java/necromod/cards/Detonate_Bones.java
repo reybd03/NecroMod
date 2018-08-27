@@ -30,7 +30,7 @@ public class Detonate_Bones extends AbstractNecromancerCards {
 	public Detonate_Bones() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.DETONATE_BONES), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
 	
 		this.baseDamage = this.damage = ATTACK_DMG;
 		this.isMultiDamage = true;

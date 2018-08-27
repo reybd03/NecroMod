@@ -29,7 +29,7 @@ public class Negative_Energy_Javelin extends AbstractNecromancerCards{
 	public Negative_Energy_Javelin() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.NEGATIVE_ENERGY_JAVELIN), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 

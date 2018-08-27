@@ -26,7 +26,7 @@ public class Negative_Energy_Burst extends AbstractNecromancerCards{
 	public Negative_Energy_Burst() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.NEGATIVE_ENERGY_BURST), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ALL_ENEMY, POOL);
+				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ALL_ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.baseMagicNumber = this.magicNumber = this.AMOUNT;

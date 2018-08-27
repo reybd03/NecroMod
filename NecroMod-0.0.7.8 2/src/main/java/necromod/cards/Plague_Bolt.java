@@ -32,7 +32,7 @@ public class Plague_Bolt extends AbstractNecromancerCards {
 	public Plague_Bolt() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.PLAGUE_BOLT), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.baseMagicNumber = this.magicNumber = 1;

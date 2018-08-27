@@ -29,7 +29,7 @@ public class Thousand_Bone_Knives extends AbstractNecromancerCards{
 	public Thousand_Bone_Knives() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.THOUSAND_BONE_KNIVES), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = ATTACK_DMG;
 		this.baseMagicNumber = UPGRADE_TIMES_AMT;

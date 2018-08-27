@@ -25,7 +25,7 @@ public class Strike_From_Beyond extends AbstractNecromancerCards {
 	public Strike_From_Beyond() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.STRIKE_FROM_BEYOND), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 

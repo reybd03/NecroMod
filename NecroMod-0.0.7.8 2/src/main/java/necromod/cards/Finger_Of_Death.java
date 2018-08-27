@@ -24,7 +24,7 @@ public class Finger_Of_Death extends AbstractNecromancerCards {
 	public Finger_Of_Death() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.FINGER_OF_DEATH), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 

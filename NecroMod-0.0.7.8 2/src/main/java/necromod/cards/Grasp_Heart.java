@@ -28,7 +28,7 @@ public class Grasp_Heart extends AbstractNecromancerCards {
 	public Grasp_Heart() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.GRASP_HEART), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 		this.exhaust = true;

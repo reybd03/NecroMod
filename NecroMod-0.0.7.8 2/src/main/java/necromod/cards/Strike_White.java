@@ -21,7 +21,7 @@ public class Strike_White extends AbstractNecromancerCards{
 	public Strike_White() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.STRIKE_WHITE), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
 				AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC,
-				AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardTarget.ENEMY);
 
 		this.baseDamage = ATTACK_DMG;
 	}

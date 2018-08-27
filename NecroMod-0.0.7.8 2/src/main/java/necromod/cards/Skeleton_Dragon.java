@@ -29,7 +29,7 @@ public class Skeleton_Dragon extends AbstractNecromancerCards {
 	
 	public Skeleton_Dragon() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SKELETON_DRAGON), COST, DESCRIPTION, AbstractCard.CardType.POWER,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
 		this.cost = COST;
 		this.damage = DMG_AMT;
 				

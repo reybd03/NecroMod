@@ -21,7 +21,7 @@ public class Epidemic extends AbstractNecromancerCards {
 	
 	public Epidemic() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.EPIDEMIC), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		this.baseMagicNumber = this.magicNumber = 2;
 		this.exhaust = true;
 		

@@ -25,7 +25,7 @@ public class Toxic_Smoke_Screen extends AbstractNecromancerCards {
 	
 	public Toxic_Smoke_Screen() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.TOXIC_SMOKE_SCREEN), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
 		this.baseMagicNumber = this.magicNumber = POISON_AMT;
 		this.baseBlock = BLOCK_AMT;
 		

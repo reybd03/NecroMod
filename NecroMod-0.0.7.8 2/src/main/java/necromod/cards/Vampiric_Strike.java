@@ -30,7 +30,7 @@ public class Vampiric_Strike extends AbstractNecromancerCards {
 	public Vampiric_Strike() {
 		super (ID, NAME, NecroMod.makePath(NecroMod.VAMPIRIC_STRIKE), COST, DESCRIPTION,
 				AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 		
 		this.baseDamage = this.damage =  ATTACK_DMG;
 

@@ -23,7 +23,7 @@ public class Siphon_Strength extends AbstractNecromancerCards {
 	
 	public Siphon_Strength() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SIPHON_STRENGTH), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
 		this.baseMagicNumber = this.magicNumber = 2;
 		this.exhaust = true;
 	}

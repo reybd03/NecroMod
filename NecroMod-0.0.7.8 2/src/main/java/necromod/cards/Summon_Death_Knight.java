@@ -22,7 +22,7 @@ public class Summon_Death_Knight extends AbstractNecromancerCards{
 	
 	public Summon_Death_Knight() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.SUMMON_DEATH_KNIGHT), COST, DESCRIPTION, AbstractCard.CardType.POWER,
-				AbstractCardEnum.WHITE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF, POOL);
+				AbstractCardEnum.WHITE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
 		
 		
 	}
