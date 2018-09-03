@@ -1,0 +1,9 @@
+{
+  "modid": "necromod",
+  "name": "Necromancer Mod",
+  "author_list": ["original: ShikiSeiren, updates: elhulk08"],
+  "description": "Fixing Vampire Lady/Princess",
+  "version": "0.1.1",
+  "sts_version": "08-23-2018",
+  "mts_version": "3.0.0"
+}
