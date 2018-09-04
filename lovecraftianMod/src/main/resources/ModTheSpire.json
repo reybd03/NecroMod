@@ -1,0 +1,10 @@
+{
+  "modid": "lovecraftmod",
+  "name": "Lovecraft Mod",
+  "author_list": "reybd03",
+  "description": "Testing Updates n Stuff",
+  "version": "0.0.1",
+  "sts_version": "08-26-2018",
+  "mts_version": "3.0.0",
+  "update_json": "https://api.github.com/repos/reybd03/slay_the_spire/releases/latest" 
+}
