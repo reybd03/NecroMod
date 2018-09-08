@@ -1,13 +1,12 @@
-# List of issues && status for September
-# 1. Requiem (upgrade) | Research
-# 2. Vampire Lady card information (fix info and upgrade) | fixed
-# 4. Epidemic (crash when applying power to shackles) | Research
-# 5. Slay the living (fix) | fixed
-# 6. Update existing code to STS code | Agile Updates
-# 7. Skeletal Dragon (fix) | Research
-# 8. Phylactery | Research
-# 9. Clean up cards | Research
-# 10. Negative Energy... (fix wording) | research
-# 11. Negative Energy Shield: apply 1/2 damage reduction from attacking enemies instead of full dmg block| research 
-# 12. Update Summon Lich | research
-# 13. Update Stop Heart | research
+# List of issues && status for September:
+# 1. Update existing code to STS & BaseMod code | Agile Updates
+# 2. Vampire Lady card information (fix info and upgrade) | Fixed
+# 3. Epidemic (crash when applying power to shackles) | Fixed
+# 4. Slay the living (fix) | Fixed
+# 5. Skeletal Dragon (fix) | Testing
+# 6. Phylactery | Research
+# 7. Clean up cards | Research
+# 8. Negative Energy... (fix wording) | fixed
+# 9. Negative Energy Shield: apply 1/2 damage reduction from attacking enemies instead of full dmg block| Fixed
+# 10. Update Summon Lich | fixed
+# 11. Shackles caused by Epidemic only works on 1 monster | Research
