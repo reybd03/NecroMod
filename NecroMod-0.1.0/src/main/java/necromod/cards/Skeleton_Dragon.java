@@ -22,8 +22,7 @@ public class Skeleton_Dragon extends AbstractNecromancerCards {
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final	String NAME = cardStrings.NAME;
 	public static final	String DESCRIPTION = cardStrings.DESCRIPTION;
-	private static final int COST = 10;
-	private static final int POOL = 1;	
+	private static final int COST = 7;	
 	
 	public int DMG_AMT = 7;
 	

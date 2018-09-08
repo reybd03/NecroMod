@@ -21,7 +21,8 @@ public class Shackles extends AbstractPower {
 	public int DAMAGE_AMT;
 	public int TOTAL_DAMAGE = 0;
 	public AbstractMonster target;
-	
+	// boolean epidemic
+        
 	public Shackles(AbstractCreature owner, AbstractCreature target, int amount) {
 		this.name = NAME;
 		this.ID = POWER_ID;
@@ -38,7 +39,10 @@ public class Shackles extends AbstractPower {
 	
 	@Override
 	public int onAttacked(final DamageInfo info, int damageAmount) {
-		
+	 // check to see if >1 monsters have OfPain
+         // if so, epidemic = true
+         // then cycle through monster on each attack
+         
             if (	this.target.hasPower("OfPain") 
             		&& !this.target.isDying 
             		&& this.target.currentHealth > 0 
@@ -48,7 +52,7 @@ public class Shackles extends AbstractPower {
             	AbstractDungeon.actionManager.addToTop(new DamageAction(this.target, new DamageInfo(this.owner, damageAmount, DamageInfo.DamageType.THORNS), 0));
             	
             }        
-		
+      
 		return damageAmount;
 	}
 	

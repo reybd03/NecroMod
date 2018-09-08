@@ -17,7 +17,6 @@ public class Stop_Heart extends AbstractNecromancerCards {
 	public static final String NAME = "Stop Heart";
 	private static final int COST = 2;
 	public static final String DESCRIPTION = "Apply 1 CrushedHeart. Apply !M! Weak and Vulnerable. Exhaust.";
-	private static final int POOL = 1;
 	public final int AMOUNT = 1;
 
 	

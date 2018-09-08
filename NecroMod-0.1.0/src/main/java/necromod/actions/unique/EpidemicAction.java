@@ -25,10 +25,9 @@ public class EpidemicAction extends AbstractGameAction{
 	public EpidemicAction(final AbstractCreature target, final AbstractCreature source) {
         this.target = target;
         this.source = source;
-       
     }
     
-    @Override
+ @Override
     public void update() {
     	ArrayList<String> Debuff = new ArrayList<String>();
 		Debuff.add("Poison");
@@ -39,7 +38,7 @@ public class EpidemicAction extends AbstractGameAction{
 		Debuff.add("GraspHeartPower");
 		Debuff.add("NegativeLevelsPower");
 		Debuff.add("OfPain");
-		
+                		
 		int amount;
 		
 		
@@ -116,8 +115,8 @@ public class EpidemicAction extends AbstractGameAction{
 			
 					case "OfPain" :
 						amount = this.target.getPower("OfPain").amount;
-						AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, this.source, new OfPain(mo, amount), amount));
-						AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.source, this.source, new Shackles(this.source, this.source, amount), amount));
+						AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.source, this.source, new Shackles(this.source, mo, amount), amount));
+                                                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, mo, new OfPain(mo, amount), amount));
 						break;
 				
 					}
@@ -128,5 +127,6 @@ public class EpidemicAction extends AbstractGameAction{
     	    		
 		this.isDone = true;
     }
+
 
 }

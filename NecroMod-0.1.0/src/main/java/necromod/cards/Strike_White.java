@@ -16,7 +16,6 @@ public class Strike_White extends AbstractNecromancerCards{
 	private static final int COST = 1;
 	private static final int ATTACK_DMG = 6;
 	private static final int UPGRADE_PLUS_DMG = 3;
-	private static final int POOL = 0;
 
 	public Strike_White() {
 		super(ID, NAME, NecroMod.makePath(NecroMod.STRIKE_WHITE), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,

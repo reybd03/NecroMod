@@ -3,8 +3,9 @@
   "name": "Necromancer Mod",
   "author_list": ["original: ShikiSeiren, updates: reybd03"],
   "description": "Testing Updates n Stuff",
+  "credits": "ShikiSeiren: Original Creator.",
   "version": "0.1.1",
-  "sts_version": "08-23-2018",
+  "sts_version": "09-06-2018",
   "mts_version": "3.0.0",
   "update_json": "https://api.github.com/repos/reybd03/NecroMod/releases/latest" 
 }

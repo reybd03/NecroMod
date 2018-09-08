@@ -13,7 +13,7 @@ public class NegativeShieldPower extends AbstractPower {
 	public static final String POWER_ID = "NegativeShieldPower";
 	public static final String NAME = "Negative Energy Shield";
 	public static final String[] DESCRIPTIONS = new String[] {
-			"When attacked : Apply 1 Negative level to the attacker."
+			"When attacked : Apply 1 Negative level to the attacker and take 1/2 damage."
 	};
 	
 	public int DAMAGE_AMT;
@@ -38,7 +38,7 @@ public class NegativeShieldPower extends AbstractPower {
 	           AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(info.owner, this.owner, new NegativeShieldPower2(info.owner, this.owner, 1), 1));
 	       }
 	        
-		damageAmount = 0;
+		damageAmount = (int)(damageAmount * 0.5);
 		return damageAmount;
 	}
 
